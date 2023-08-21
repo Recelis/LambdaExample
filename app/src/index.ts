@@ -9,3 +9,5 @@ app.get('/', (req: Request, res: Response) => {
 });
 
 app.listen(port || 8000, () => console.log('App is listening on port 8000.'));
+
+module.exports = app
