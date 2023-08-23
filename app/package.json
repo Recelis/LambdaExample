@@ -2,6 +2,7 @@
   "name": "express_server",
   "version": "1.0.0",
   "description": "This Node Express Server serves Stating Golf.",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "build": "npx tsc",
@@ -16,6 +17,7 @@
     "express": "^4.18.2"
   },
   "devDependencies": {
+    "@tsconfig/node-lts-strictest-esm": "^18.12.1",
     "@types/express": "^4.17.17",
     "@types/node": "^20.5.1",
     "nodemon": "^3.0.1",
