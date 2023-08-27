@@ -1,4 +1,3 @@
-Golf Backend
+AWS Lambda Backend
 
-- is an express web server
-- run in AWS with Lambdas
+A Typescript express web server which allows you to run locally and deployed on AWS with Lambdas
