@@ -9,4 +9,4 @@ app.get('/', (_req: Request, res: Response) => {
   res.send('Successful response.');
 });
 
-export default app
+export { app }
