@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "This Node Express Server serves Stating Golf.",
   "type": "module",
-  "main": "index.js",
+  "main": "lambda.ts",
   "scripts": {
     "build": "npx tsc",
     "test": "echo \"Error: no test specified\" && exit 1",

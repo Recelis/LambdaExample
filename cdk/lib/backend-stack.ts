@@ -8,16 +8,11 @@ export class BackendStack extends cdk.Stack {
   constructor(scope: Construct, id: string, props?: cdk.StackProps) {
     super(scope, id, props);
 
-    // The code that defines your stack goes here
-    // const apiHandler = new lambda.Function(this, 'api', {
-    //   entry: '../app/src/lambda.ts',
-    //   handler: 'index.handler',
-    //   depsLockFilePath: '../app/yarn.lock'
-    // })
+    
 
     const expressLambda = new lambda.Function(this, 'ExpressLambda', {
       functionName: 'backend',
-      runtime: lambda.Runtime.NODEJS_14_X,
+      runtime: lambda.Runtime.NODEJS_18_X,
       handler: 'lambda.handler',
       code: lambda.Code.fromAsset('../app'),
     });
