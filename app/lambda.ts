@@ -1,4 +1,4 @@
 // lambda.js
-const serverlessExpress = require("@codegenie/serverless-express");
-import app from "./app.js";
-exports.handler = serverlessExpress({ app });
+import * as serverlessExpress from "@codegenie/serverless-express";
+import app from "./app";
+exports.handler = serverlessExpress.configure({ app });
