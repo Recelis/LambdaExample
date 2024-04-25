@@ -10,9 +10,9 @@ export class BackendStack extends cdk.Stack {
     const stackName = cdk.Stack.of(this).stackName;
 
     const expressLambda = new lambda.Function(this, `${stackName}ExpressLambda`, {
-      functionName: "backend",
+      functionName: `${stackName}ExpressLambda`,
       runtime: lambda.Runtime.NODEJS_18_X,
-      handler: "build/lambda.handler", // always look for the build directory
+      handler: "build/src/lambda.handler", // always look for the build directory
       code: lambda.Code.fromAsset("../api"), // look for the root api directory
     });
 

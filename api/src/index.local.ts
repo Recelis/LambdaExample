@@ -1,4 +1,4 @@
-import app from "./api.js";
+import app from "./index";
 
 const port = process.env["PORT"];
 const server = () => {
