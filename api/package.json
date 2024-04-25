@@ -2,11 +2,11 @@
   "name": "express_server",
   "version": "1.0.0",
   "description": "This Node Express Server serves Stating Golf.",
-  "main": "app.local.js",
+  "main": "api.local.js",
   "scripts": {
     "build": "npx tsc",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node build/app.local.js"
+    "start": "node build/api.local.js"
   },
   "author": "",
   "license": "ISC",

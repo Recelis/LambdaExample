@@ -6,10 +6,10 @@ import express, {
 } from "express";
 import "dotenv/config";
 
-const app: Application = express();
+const api: Application = express();
 
-app.get("/", (_req: Request, res: Response) => {
+api.get("/", (_req: Request, res: Response) => {
   res.send("Successful response.");
 });
 
-export default app;
+export default api;
