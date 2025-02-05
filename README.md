@@ -1,5 +1,6 @@
-# AWS Lambda Backend
+# AWS Lambda Example
 
+Backend:
 A Typescript express web server which allows you to run locally and deployed on AWS with Lambdas
 
 This is a project for deploying an express server on an AWS Lambda.
